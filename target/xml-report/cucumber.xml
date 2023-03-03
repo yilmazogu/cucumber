@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="5.2" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="data_tables" name="TC01_musteri_giris_testi" time="5.048">
+<testsuite name="Cucumber" time="23.015" tests="2" skipped="0" failures="2" errors="0">
+<testcase classname="hooks_test" name="TC01_google_iphone_arama" time="12.353">
+<failure/>
 <system-out><![CDATA[
-Given kullanici "https://www.bluerentalcars.com/login" gider................passed
-When kullanici emaili ve sifresini girer....................................passed
+Given kullanici google gider................................................passed
+When kullanici "iphone" için arama yapar....................................undefined
+Then sonuclarin "apple" icerdigini dogrula..................................skipped
+Then close the application..................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="hooks_test" name="TC02_google_tesla_arama" time="10.466">
+<failure/>
+<system-out><![CDATA[
+Given kullanici google gider................................................passed
+When kullanici "tesla" için arama yapar.....................................undefined
+Then sonuclarin "toros" icerdigini dogrula..................................skipped
+Then close the application..................................................skipped
 ]]></system-out>
 </testcase>
 </testsuite>
